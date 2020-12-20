@@ -39,7 +39,7 @@
   <body>
       <!--Main header -->
     <header class="container-fluid fixed-top">
-        <div class="row d-none d-lg-flex justify-content-center" >
+        <div class="row d-none d-lg-flex justify-content-end" >
             <div class="col-12 col-lg-4 my-auto text-center">
                 <a href="#" class="nav-link logo-link">
                     <i class="fab fa-twitch"></i>
@@ -67,6 +67,20 @@
                                 <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="#">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                        ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                        $0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>

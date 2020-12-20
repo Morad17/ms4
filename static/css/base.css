@@ -1,0 +1,35 @@
+
+
+/*---HomePage---*/
+
+.banner{
+    background-size: contain;
+    padding-top: 150px;
+    height: 50vh;
+}
+
+.home-icon{
+    font-size: 40px;
+    color: #ffffff;
+}
+.banner-2 h2{
+    color: #fff;
+}
+.banner-2 .watch-card{
+    background: url('/media/watch.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 350px;
+}
+
+.banner-2 .shop-card{
+    background: url('/media/shop.jpg') no-repeat center fixed;
+    border: 2px solid #fff;
+    background-size: cover;
+    height: 350px;
+}
+
+.banner-2 .subscribe-card{
+    background: url('/media/subscribe.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 350px;
+}
