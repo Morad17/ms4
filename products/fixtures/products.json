@@ -1,0 +1,146 @@
+[
+    {
+        "pk":1, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000001",
+            "name": "AFK Logo White Mug",
+            "description":"An Official AFK Logo Mug in A White Ceramic Finish. Comes With 3 mugs in the pack",
+            "rating": 4,
+            "price": 12.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img924/783/X7UtzX.jpg",
+            "image": "afk-mug.jpg"
+        }
+    },
+    {
+        "pk":2, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000002",
+            "name": "AFK Logo Sweatshirt",
+            "description":"The Official AFK Sweatchirt in All white. 100% cotton and completely machine washable. Available in several sizes",
+            "rating": 4.5,
+            "price": 19.99,
+            "category": 4,
+            "image_url": "https://imagizer.imageshack.com/img922/9922/bxUjIX.jpg",
+            "image": "afk-sweatshirt.jpg"
+        }
+    },
+    {
+        "pk":3, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000003",
+            "name": "AFK Logo Jumper",
+            "description":"The Official AFK Jumper in All white. Watch your favourite stream wearing the most popular Jumper on sale! 100% cotton and completely machine washable. Available in several sizes",
+            "rating": 5,
+            "price": 24.99,
+            "category": 4,
+            "image_url": "https://imagizer.imageshack.com/img924/3853/gp0nEd.jpg",
+            "image": "afk-jumper.jpg"
+        }
+    },
+    {
+        "pk":4, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000004",
+            "name": "AFK Logo Longsleeve Tee",
+            "description":"The Official AFK Longsleeve T Shirt in white with a black trim. 100% cotton and completely machine washable. Available in several sizes",
+            "rating": 4.2,
+            "price": 14.99,
+            "category": 2,
+            "image_url": "https://imagizer.imageshack.com/img922/149/j0eXP2.jpg",
+            "image": "afk-longsleeve.jpg"
+        }
+    },
+    {
+        "pk":5, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000005",
+            "name": "AFK Facemask",
+            "description":"The Official AFK Facemask to get you through the corona period. Fully Protects the user from giving out diseases. Machine Washable and reusable. Comes with 4 in a pack",
+            "rating": 3.5,
+            "price": 9.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img924/5857/La0nz6.jpg",
+            "image": "afk-facemask.jpg"
+        }
+    },
+    {
+        "pk":6, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000006",
+            "name": "AFK Offical Phone Cover",
+            "description":"The Official AFK Phone Cover to protect your Iphone. This cover clips on the back of your phone and fully protects it from drops up to heights of 20 ft. A screen Protector is not included",
+            "rating": 4.2,
+            "price": 12.99,
+            "category": 7,
+            "image_url": "https://imagizer.imageshack.com/img922/153/I8Wgqr.jpg",
+            "image": "afk-phone-cover.jpg"
+        }
+    },
+    {
+        "pk":7, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000007",
+            "name": "AFK Dog Tag",
+            "description":"The Official AFK Dog Tags. This unique set of Jewellery is a great addition to any outfits you choose. Made from stainless steel, will never rust.",
+            "rating": 4,
+            "price": 19.99,
+            "category": 5,
+            "image_url": "https://imagizer.imageshack.com/img922/6306/ejLWPx.jpg",
+            "image": "afk-dog-tag.jpg"
+        }
+    },
+    {
+        "pk":8, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000008",
+            "name": "AFK Water",
+            "description":"The Official AFK Water Bottle. This Flask will help to keep your drinks cool in any templeratures. You can leave in the fridge or take it out with you to work. It also has a clip to attatch to a bag for convenience.",
+            "rating": 4.5,
+            "price": 24.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img924/6890/sclgCO.jpg",
+            "image": "afk-water-bottle.jpg"
+        }
+    },
+    {
+        "pk":9, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000009",
+            "name": "AFK Rucksack",
+            "description":"The Official AFK Rucksack, with two pockets, and an internal pocket for storage of valuables. Comes in a cofortable fabric thats easy on the back and a portable size.",
+            "rating": 4.7,
+            "price": 24.99,
+            "category": 6,
+            "image_url": "https://imagizer.imageshack.com/img924/4081/tooidn.jpg",
+            "image": "afk-rucksack.jpg"
+        }
+    },
+    {
+        "pk":10, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp10000000010",
+            "name": "AFK Weekender Bag",
+            "description":"The Official AFK Weekend Bag. Designed for women who need that bit extra space in their bags. Built to last with great support on handles, and genuine leather.",
+            "rating": 4,
+            "price": 34.99,
+            "category": 6,
+            "image_url": "https://imagizer.imageshack.com/img923/3150/0QuI9A.jpg",
+            "image": "afk-weekender-bag.jpg"
+        }
+    }
+
+
+    
+
+]
