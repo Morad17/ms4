@@ -2,14 +2,19 @@
 {% load static %}
 
 {% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
     
 {% endblock %}
 
 {% block content %}
 <!-----Banner----->
 <div class="col-12 banner text-center">
-    <h3 class="display-4">MoradDoesGaming</h3>
-    <button class="btn btn-dark mt-40">Shop Now</button>
+    <h3 class="display-4">AFK Gaming</h3>
+    <a href="{% url 'products' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
 </div>
 <hr class="mx-10">
 <!-----Cards----->

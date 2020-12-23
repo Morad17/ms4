@@ -42,8 +42,6 @@
         <div class="row d-none d-lg-flex justify-content-end" >
             <div class="col-12 col-lg-4 my-auto text-center">
                 <a href="#" class="nav-link logo-link">
-                    <i class="fab fa-twitch"></i>
-                    <strong>MoradMerchStore</strong>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto">
@@ -56,16 +54,7 @@
                             </div>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="user-options">
-                            {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                            {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                            {% endif %}
+                            
                         </div>
                     </li>
                     <li class="list-inline-item">

@@ -7,6 +7,10 @@
     padding-top: 300px;
     height: 50vh;
 }
+header{
+    background: white;
+    margin-bottom: 100px;
+}
 
 .home-icon{
     font-size: 40px;
@@ -39,4 +43,19 @@
 font-weight: 700;
 font-size: 25px;
 padding: 0 40px;
+}
+
+/*-----Products--*/
+.product-container{
+    padding-top:300px ;
+}
+.product-container .card{
+    border: none;
+}
+.product-hr{
+    margin: 50px 0px;
+}
+.product-price{
+    font-size: 25px;
+    font-weight: 500!important;
 }
