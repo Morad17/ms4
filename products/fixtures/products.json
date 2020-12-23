@@ -4,6 +4,7 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000001",
+            "gender":"Unisex",
             "name": "AFK Logo White Mug",
             "description":"An Official AFK Logo Mug in A White Ceramic Finish. Comes With 3 mugs in the pack",
             "rating": 4,
@@ -18,6 +19,7 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000002",
+            "gender":"Unisex",
             "name": "AFK Logo Sweatshirt",
             "description":"The Official AFK Sweatchirt in All white. 100% cotton and completely machine washable. Available in several sizes",
             "rating": 4.5,
@@ -32,6 +34,7 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000003",
+            "gender":"Unisex",
             "name": "AFK Logo Jumper",
             "description":"The Official AFK Jumper in All white. Watch your favourite stream wearing the most popular Jumper on sale! 100% cotton and completely machine washable. Available in several sizes",
             "rating": 5,
@@ -46,6 +49,7 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000004",
+            "gender":"Unisex",
             "name": "AFK Logo Longsleeve Tee",
             "description":"The Official AFK Longsleeve T Shirt in white with a black trim. 100% cotton and completely machine washable. Available in several sizes",
             "rating": 4.2,
@@ -60,6 +64,7 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000005",
+            "gender":"Unisex",
             "name": "AFK Facemask",
             "description":"The Official AFK Facemask to get you through the corona period. Fully Protects the user from giving out diseases. Machine Washable and reusable. Comes with 4 in a pack",
             "rating": 3.5,
@@ -74,6 +79,7 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000006",
+            "gender":"Unisex",
             "name": "AFK Offical Phone Cover",
             "description":"The Official AFK Phone Cover to protect your Iphone. This cover clips on the back of your phone and fully protects it from drops up to heights of 20 ft. A screen Protector is not included",
             "rating": 4.2,
@@ -88,6 +94,7 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000007",
+            "gender":"Unisex",
             "name": "AFK Dog Tag",
             "description":"The Official AFK Dog Tags. This unique set of Jewellery is a great addition to any outfits you choose. Made from stainless steel, will never rust.",
             "rating": 4,
@@ -102,6 +109,7 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000008",
+            "gender":"Unisex",
             "name": "AFK Water",
             "description":"The Official AFK Water Bottle. This Flask will help to keep your drinks cool in any templeratures. You can leave in the fridge or take it out with you to work. It also has a clip to attatch to a bag for convenience.",
             "rating": 4.5,
@@ -116,6 +124,7 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000009",
+            "gender":"Unisex",
             "name": "AFK Rucksack",
             "description":"The Official AFK Rucksack, with two pockets, and an internal pocket for storage of valuables. Comes in a cofortable fabric thats easy on the back and a portable size.",
             "rating": 4.7,
@@ -130,6 +139,7 @@
         "model": "products.product",
         "fields":{
             "sku":"pp10000000010",
+            "gender":"Female",
             "name": "AFK Weekender Bag",
             "description":"The Official AFK Weekend Bag. Designed for women who need that bit extra space in their bags. Built to last with great support on handles, and genuine leather.",
             "rating": 4,
