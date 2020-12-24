@@ -2,9 +2,12 @@
 
 /*---HomePage---*/
 
+.top-padding{
+    padding-top:300px;
+}
+
 .banner{
     background-size: contain;
-    padding-top: 300px;
     height: 50vh;
 }
 header{
@@ -46,9 +49,10 @@ padding: 0 40px;
 }
 
 /*-----Products--*/
-.product-container{
-    padding-top:300px ;
+.products-title hr{
+    width:75%;
 }
+
 .product-container .card{
     border: none;
 }
@@ -58,4 +62,7 @@ padding: 0 40px;
 .product-price{
     font-size: 25px;
     font-weight: 500!important;
+}
+.product-detail-container{
+    margin-top:-50px;
 }
