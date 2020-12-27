@@ -66,3 +66,24 @@ padding: 0 40px;
 .product-detail-container{
     margin-top:-50px;
 }
+.product-categories .badge-pill{
+    font-size: 110%;
+}
+.product-categories, .sort-row{
+    margin-left: 50px;
+}
+.button-top{
+    width: 42px;
+    height: 42px;
+    border: 1px solid;
+    margin-left: 40px;
+}
+.button-top .fa-arrow-up{
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+.product-end{
+    padding-bottom: 50px;;
+}
