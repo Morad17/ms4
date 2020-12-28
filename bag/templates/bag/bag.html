@@ -10,6 +10,7 @@
     
 {% endblock %}
 
+<title>{% block extra_title %}Shopping Bag{% endblock %}</title>
 {% block content %}
 <div class="container top-padding">
     <div class="row justify-content-center">
@@ -46,13 +47,8 @@
                                     <td class="py-3">
                                         <p class="my-0">£{{ item.product.price }}</p>
                                     </td>
-                                    <td class="py-3 w-25">
-                                        <p class="my-0">{{ item.quantity }}</p>
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">£{{ item.product.price }}</p>
-                                    </td>
-                                </tr>
+
+                                
                                 <td class="py-3 w-25">
                                         <form class="form update-form" method="POST" action="">
                                             {% csrf_token %}
@@ -82,11 +78,12 @@
                                             </div>
                                         </form>
                                         <a class="update-link"><p>Update</p></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><p>Remove</p></a>
+                                        <a class="remove-link text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><p>Remove</p></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
+                            </tr>
                             {% endfor %}
         {% else %}
             <p class="lead mb-5">Your Bag is empty.</p>
