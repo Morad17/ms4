@@ -88,3 +88,50 @@ padding: 0 40px;
 .product-end{
     padding-bottom: 50px;;
 }
+/*----Basket--Sidebar----*/
+
+.wrapper{
+    display: block;
+}
+
+#basketSidebar{
+    background-color:white;
+    display: none;
+    min-width: 250px;
+    max-width: 25vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* top layer */
+    z-index: 9999;
+}
+#basketSidebar .row{
+    padding-top: 40px;
+}
+#basketSidebar .top-row .col{
+    display: flex;
+    flex-direction: row;
+}
+
+.basket-overlay {
+    display: none;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.4);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    opacity: 0;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+/* display .overlay when it has the .active class */
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+}
