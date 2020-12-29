@@ -39,6 +39,8 @@
     <title>{% block extra_title %}Homepage{% endblock %}</title>
   </head>
   <body>
+    <div class="basket-overlay">
+    </div>
       <!--Main header -->
     <header class="container-fluid fixed-top">
         <div class="row d-none d-lg-flex justify-content-end" >
@@ -107,8 +109,7 @@
     </header>
       {% block page_header %}
       {% endblock %}
-    <div class="basket-overlay">
-        </div>
+
       {% block content %}
         
       {% endblock %}
@@ -132,6 +133,13 @@
             // hide basket-overlay
             $('.basket-overlay').css('display', 'none');
         });
+
+        $('#addToBag').on('click', function () {
+            $('#basketSidebar').css('display', 'block');
+            // fade in the basket-overlay
+            $('.basket-overlay').css('display', 'block');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        })
 
        
 

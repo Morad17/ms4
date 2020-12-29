@@ -101,19 +101,31 @@ padding: 0 40px;
     max-width: 25vw;
     height: 100vh;
     position: fixed;
+    overflow: auto;
     top: 0;
     left: 0;
     /* top layer */
     z-index: 9999;
 }
 #basketSidebar .row{
-    padding-top: 40px;
+    padding-top: 10px;
 }
 #basketSidebar .top-row .col{
     display: flex;
     flex-direction: row;
 }
-
+#basketSidebar p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+#basketSidebar .col-6{
+    padding: 0 20px;
+}
+#basketSidebar .fa-times{
+    font-size: 30px;
+    color:#232323b0
+}
 .basket-overlay {
     display: none;
     position: fixed;
@@ -121,7 +133,7 @@ padding: 0 40px;
     width: 100vw;
     height: 100vh;
     /* transparent black */
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     /* middle layer, i.e. appears below the sidebar */
     z-index: 998;
     opacity: 0;
@@ -134,4 +146,13 @@ padding: 0 40px;
 #dismiss {
     width: 35px;
     height: 35px;
+    text-align: -webkit-right;
 }
+.p-0{
+    padding: 0;
+}
+.checkout-basket a{
+    width: 100%;
+    font-size: 20px;
+    height: 5vh;
+    background-color: black;
