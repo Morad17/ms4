@@ -107,6 +107,33 @@
         </div>
         {% include 'includes/basket-sidebar/basket_success.html' %}
     </header>
+
+        {% if messages %}
+        <div class="message-container">
+            {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        <div class="error-message">
+                            <h2> {{ message }}</h2>
+                        </div>
+                    {% elif level == 30 %}
+                        <div class="warning-message">
+                            <h2> {{ message }}</h2>
+                        </div>
+                    {% elif level == 25 %}
+                        <div class="success-message">
+                           <h2> {{ message }}</h2>
+                        </div>
+                    {% else %}
+                        <div class="alert-message">
+                            <h2> {{ message }}</h2>
+                        </div>
+                    {% endif %}
+                {% endwith %}
+            {% endfor%}
+        </div>
+    {% endif %}
+
       {% block page_header %}
       {% endblock %}
 
