@@ -15,7 +15,7 @@
 
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -43,13 +43,38 @@
     </div>
       <!--Main header -->
     <header class="container-fluid fixed-top">
-        <div class="row d-none d-lg-flex justify-content-end" >
-            <div class="col-12 col-lg-4 my-auto text-center">
-                <a href="#" class="nav-link logo-link">
-                </a>
+        <div class="row d-none d-lg-flex justify-content-center" >
+                <!--Search Product Bar -->
+            <div class="col-12 col-lg-4 my-auto search-div">
+            <form method="GET" action="{% url 'products' %}">
+                    <div class="input-group w-100">
+                        <input class="form-control border-0" type="text" name="q" placeholder="Search our site">
+                        <div class="input-group-append">
+                            <button class="form-control btn" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="col-12 col-lg-4 my-auto">
-                <ul class="list-inline list-unstyled text-center text-right">
+            <div class="col-12 col-lg-4 logo-title">
+                <div>
+                    <h2>AFK</h2>
+                </div>
+                <div class="logo-img">
+                    <a href="{% url 'home' %}">
+                        <img src="/media/logo.png" alt="Afk Logo">
+                    </a>
+                </div>
+                <div>
+                    <h2>GAMER</h2>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 my-auto top-icons">
+                <ul class="list-inline list-unstyled text-right">
+                    <!------Account Dropdown--- -->
                     <li class="list-inline-item dropdown">
                         <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
@@ -57,6 +82,7 @@
                                 <p >My Account</p>
                             </div>
                         </a>
+                        <!--------Links based of if registered user------>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
@@ -70,9 +96,10 @@
                             {% endif %}
                         </div>
                     </li>
-                    <li class="list-inline-item">
+                    <li class="list-inline-item shopping-list">
                         <a class="{% if grand_total %}font-weight-bold{% else %}text-black{% endif %} nav-link" href="#" id="sidebarCollapse">
                             <div class="text-center">
+                                <!-----Real Time Update Bag --->
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
@@ -87,24 +114,8 @@
                 </ul>
             </div>
         </div>
-        <!--Search Product etc.-->
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-4 my-auto">
-                <form method="GET" action="{% url 'products' %}">
-                        <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
-                            <div class="input-group-append">
-                                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                                    <span class="icon">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-            </div>
-        </div>
-
+        
+        <!-----Main navbar / Mobile version Nav---->
         <div class="row justify-content-center">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -153,6 +164,7 @@
         
 
     {% block postloadjs %}
+    <!----Jquery for add to bag sidebar----->
     <script type="text/javascript">
 
          $('#sidebarCollapse').on('click', function () {

@@ -1,14 +1,32 @@
-
+body{
+    font-family: 'Catamaran', 'Montserrat';
+}
+/*-----Font----*/
+@font-face{
+    /*---From Chequered Inc */
+    font-family:'VerminVibes';
+    src: url('/media/fonts/VerminVibes.ttf');
+}
 
 /*---HomePage---*/
 
 .top-padding{
     padding-top:300px;
 }
-
 .banner{
-    background-size: contain;
-    height: 50vh;
+    background: url('/media/afk-banner.jpg');
+    background-size: auto;
+    height: 75vh;
+}
+.banner .container{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner h3{
+    font-size: 94px;
+    color: aliceblue;
 }
 header{
     background: white;
@@ -19,28 +37,72 @@ header{
     font-size: 40px;
     color: #ffffff;
 }
+.banner-2 img{
+    max-width: 100%;
+    max-height: 100%;
+}
 .banner-2 h2{
-    color: #fff;
+    font-family:'VerminVibes';
+    color: gray; 
+    font-size: 40px;
 }
-.banner-2 .watch-card{
-    background: url('/media/watch.jpg') no-repeat center fixed;
-    background-size: cover;
-    height: 350px;
+.banner-2 .container{
+    padding:0;
+}
+.shop-card h2{
+    padding-top: 145px;
+}
+.subscribe-card h2{
+    padding-top: 20px;
+}
+/*----Top Nav---*/
+.logo-title{
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+}
+.logo-title h2{
+    font-family: 'VerminVibes';
+    font-size: 90px;
+    padding-top:30px;
+}
+.logo-img{
+    padding: 10px;
+    padding-left: 0;
+    width: 175px;
+}
+.search-div form{
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+}
+.search-div .input-group{
+    border-bottom: 4px solid black ;
+}
+.search-div .btn{
+    border: 0px;
+}
+.search-div .fa-search{
+font-size: 25px;
+}
+.search-div input{
+font-size: 20px;
 }
 
-.banner-2 .shop-card{
-    background: url('/media/shop.jpg') no-repeat center fixed;
-    border: 2px solid #fff;
-    background-size: cover;
-    height: 350px;
-}
-
-.banner-2 .subscribe-card{
-    background: url('/media/subscribe.jpg') no-repeat center fixed;
-    background-size: cover;
-    height: 350px;
-}
-/*-----Nav--*/
+  .shopping-list{
+      padding-right:70px;
+  }
+  .top-icons .fa-user, .top-icons .fa-shopping-bag{
+      color: #6441a5;
+      font-size: 40px;
+  }
+  .top-icons li p{
+      font-size: 17px;
+      padding-top:5px;
+      color: #6441a5;
+      font-weight: 600;
+  }
+/*-----Navigation Links--*/
 
 #main-nav .nav-link{
 font-weight: 700;
@@ -141,7 +203,6 @@ padding: 0 40px;
     transition: all 0.5s ease-in-out;
     opacity: 1;
 }
-/* display .overlay when it has the .active class */
 
 #dismiss {
     width: 35px;
@@ -155,4 +216,20 @@ padding: 0 40px;
     width: 100%;
     font-size: 20px;
     height: 5vh;
-    background-color: black;
+    background-color: black;}
+/*----Hover Effects-----*/
+.logo-title h2:hover, .logo-title h2:focus{
+    color: #c4302b;
+}
+
+ .search-div .input-group:hover, .search-div .input-group:focus{
+    border-bottom: 4px solid #6441a5 ;
+  }
+.top-icons i:hover, .top-icons i:focus{
+    color:#c4302b;
+}
+.top-icons p:hover, .top-icons p:focus{
+    color:#c4302b;
+}
+
+/* -------------------------------- Media Queries */

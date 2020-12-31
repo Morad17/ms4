@@ -13,47 +13,33 @@
 {% block content %}
 <!-----Banner----->
 <div class="col-12 top-padding banner text-center">
-    <h3 class="display-4">AFK Gamer</h3>
-    <a href="{% url 'products' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Shop Now</a>
+    <div class="container">
+        <h3 class="display-4">AFK Gamer</h3>
+        <a href="{% url 'products' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Shop Now</a>
+    </div>
 </div>
-<hr class="mx-10">
 <!-----Cards----->
 <div class="row banner-2">
     <div class="col-sm-12 col-md-4 text-center watch-card">
         <div class="container">
-            <div class="home-icon"><i class="far fa-laugh"></i></div>
+            <img src="/media/watch-banner.jpg" alt="Afk Logo">
             <h2 class="mx-auto">Watch</h2>   
         </div>   
     </div>
     <div class="col-sm-12 col-md-4 text-center shop-card">
         <div class="container ">
-            <div class="home-icon"><i class="fab fa-shopify"></i></div>
+            <img src="/media/shop-banner.png" alt="Afk Logo">
             <h2 class="mx-auto">Shop</h2>
         </div>
     </div>
     <div class="col-sm-12 col-md-4 text-center subscribe-card">
         <div class="container ">
-            <div class="home-icon"><i class="fas fa-users"></i></div>
+            <img src="/media/sub-banner.png" alt="Afk Logo">
             <h2 class="mx-auto">Subscribe</h2>
         </div>
     </div>
 </div>
 <hr>
-<!-----Streams----->
-<div class="row justify-content-center">
-    <div class="col-sm-12 col-md-6 text-center">
-        <h2>Youtube</h2>
-            <span>
-                <i class="fab fa-youtube"></i>
-            </span>
-    </div>
-    <div class="col-sm-12 col-md-6 text-center">
-        <h2>Twitch</h2>
-        <span>
-            <i class="fab fa-twitch"></i>
-        </span>
-    </div>
-</div>
 <!-----Testimonials----->
 <div class="row no-gutters ">
     <div class="col-sm-12 col-md-4 text-center">
