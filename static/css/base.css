@@ -1,5 +1,7 @@
 body{
     font-family: 'Catamaran', 'Montserrat';
+    width:100%;
+    overflow-x: hidden;
 }
 /*-----Font----*/
 @font-face{

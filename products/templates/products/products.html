@@ -82,6 +82,12 @@
                                             {% else %}
                                                 <small class="text-muted">No Ratings</small>
                                             {% endif %}
+                                             {% if request.user.is_superuser %}
+                                                <div class="col-12">
+                                                    <a href="{% url 'edit_product' product.id %}">Edit</a>|
+                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                </div>
+                                            {% endif %}
                                         </div>
                                     </div>
                                 </div>
