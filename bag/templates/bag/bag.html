@@ -23,14 +23,14 @@
 </div>
 
 <div class="row justify-content-center">
-    <div class="col-9">
+    {% include 'bag/mobile-bag.html' %}
+    <div class="d-none d-sm-none d-md-block col-md-9 ">
         {% if bag_items %}
             <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
                                     <th scope="col">Product Info</th>
-                                    <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
                                     <th scope="col">Subtotal</th>

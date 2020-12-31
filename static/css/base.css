@@ -14,8 +14,9 @@ body{
     padding-top:300px;
 }
 .banner{
-    background: url('/media/afk-banner.jpg');
-    background-size: auto;
+    /* background: url('/media/afk-banner.jpg');
+    background-size: auto; */
+    background-color: #c4302b;
     height: 75vh;
 }
 .banner .container{
@@ -147,6 +148,12 @@ padding: 0 40px;
 
 }
 
+.update-link{
+    color:blue !important;
+}
+.remove-link{
+    color: crimson !important;
+}
 .product-end{
     padding-bottom: 50px;;
 }
@@ -217,6 +224,14 @@ padding: 0 40px;
     font-size: 20px;
     height: 5vh;
     background-color: black;}
+.btn-back-shopping{
+    border: 1px solid black;
+    background-color: #c4302b;
+    color: white;
+}
+.fa-chevron-left{
+    color:black;
+}
 /*----Hover Effects-----*/
 .logo-title h2:hover, .logo-title h2:focus{
     color: #c4302b;
@@ -233,3 +248,85 @@ padding: 0 40px;
 }
 
 /* -------------------------------- Media Queries */
+
+/*----Mobile Phones----*/
+
+@media (max-width: 576px){
+    .product-categories,
+    .sort-row{
+        margin-left: 0px;
+        border-bottom: 5px solid #6441a5;
+    }
+    .product-categories{
+        border-top: 5px solid #6441a5;
+        padding-top: 10px;
+    }
+    .sort-row, .product-categories{
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+    .sort-row .btn{
+        font-size: 25px;
+    }
+    .sort-row .dropdown-menu{
+        left: -20px !important;
+    }
+    .sort-row .dropdown-menu a{
+        padding: 4px 100px;
+        color: black;
+    }
+    .top-padding{
+        padding-top: 120px;
+    }
+    .product-categories a{
+        padding:10px;
+    }
+    .product-form-row .form-group{
+        width:100% !important;
+    }
+    .submit-mob{
+        text-align: center;
+    }
+    #addToBag{
+        text-align: center;
+        border: 1px solid black;
+        background: #6441a5;
+        color: white;
+        font-size: 18px;
+    }
+    /*----Bag-----*/
+    .mobile-bag p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .qty-toggler{
+    margin-left: 20px;
+    text-align: center;
+    padding-left: 39px;
+    }
+    .qty-toggler .form-group{
+    border-bottom: 5px solid #6441a5;
+    }
+    .mobile-shopping a{
+    padding-left:60px;
+    }
+    .mobile-shopping, .mobile-checkout{
+        display: flex;
+    }
+    /*----Top--Nav--*/
+    .fa-user, .fa-shopping-bag, .fa-search{
+      color: #6441a5;
+      font-size: 33px !important;
+  }
+
+  .fa-search{
+      margin-top:10px;
+  }
+  .mobile-top-icons p{
+      font-size: 15px !important;
+      padding-top:5px;
+      color: #6441a5;
+      font-weight: 600;
+  }
+    
+}
