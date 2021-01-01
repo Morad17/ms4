@@ -7,7 +7,7 @@ body{
 @font-face{
     /*---From Chequered Inc */
     font-family:'VerminVibes';
-    src: url('/media/fonts/VerminVibes.ttf');
+    src: url('/static/fonts/VerminVibes.ttf');
 }
 
 /*---HomePage---*/
@@ -45,7 +45,7 @@ header{
     max-height: 100%;
 }
 .banner-2 h2{
-    font-family:'VerminVibes';
+    font-family:'VerminVibes', 'Catamaran';
     color: gray; 
     font-size: 40px;
 }
@@ -124,6 +124,11 @@ padding: 0 40px;
 .product-hr{
     margin: 50px 0px;
 }
+.product-rrp{
+    font-size: 30px;
+    color: red;
+    text-decoration: line-through;
+}
 .product-price{
     font-size: 25px;
     font-weight: 500!important;
@@ -158,6 +163,22 @@ padding: 0 40px;
 }
 .product-end{
     padding-bottom: 50px;;
+}
+.hot-products h2{
+    font-family:'VerminVibes', 'Catamaran';
+    font-size: 45px;
+}
+.season-heading{
+    color:#6441a5
+}
+.specials-heading{
+    color:#c4302b;
+}
+.rating-heading{
+    color:black;
+}
+.sort-row .dropdown-toggle{
+    font-size: 25px;
 }
 /*----Basket--Sidebar----*/
 
@@ -331,4 +352,19 @@ padding: 0 40px;
       font-weight: 600;
   }
     
+}
+
+/*----Media Query Ipad sizes----*/
+
+@media only screen and (max-width: 1030px) and (min-width: 600px){
+    .top-padding{
+        padding-top:150px;
+    }
+    .logo-title h2{
+        font-size:50px !important;
+        
+    }
+    .logo-title img{
+        display: none;
+    }
 }

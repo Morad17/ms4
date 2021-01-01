@@ -1,0 +1,83 @@
+[
+    {
+        "pk":1, 
+        "model": "products.seasonal",
+        "fields":{
+            "sku":"pp1000000992",
+            "date":"January",
+            "gender":"Unisex",
+            "name": "AFK Stickers",
+            "description":"Official Stickers for the Winter season",
+            "rating": 3,
+            "price": 10.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img922/1393/sh43Er.jpg",
+            "image": "afk-stickers.jfif"
+        }
+    },
+    {
+        "pk":2, 
+        "model": "products.seasonal",
+        "fields":{
+            "sku":"pp1000000052",
+            "date":"February",
+            "gender":"Unisex",
+            "name": "AFK Calendar",
+            "description":"Offical 2021 Calendar for the new year",
+            "rating": 3.5,
+            "price": 19.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img922/9740/WzXLcs.jpg",
+            "image": "afk-calendar.jfif"
+        }
+    },
+    {
+        "pk":3, 
+        "model": "products.seasonal",
+        "fields":{
+            "sku":"pp1000000763",
+            "gender":"Unisex",
+            "date":"December",
+            "name": "AFK Stockings",
+            "description":"The Official AFK Stocking for the Christmas holidays",
+            "rating": 3,
+            "price": 13.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img923/8678/kaMA7X.jpg",
+            "image": "afk-stockings.jfif"
+        }
+    },
+    {
+        "pk":4, 
+        "model": "products.seasonal",
+        "fields":{
+            "sku":"pp1000003434",
+            "gender":"Unisex",
+            "date":"January",
+            "name": "AFK Sherpa Towel",
+            "description":"The Official AFK Sherpa Towel only available during the winter",
+            "rating": 4.2,
+            "price": 14.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img923/8750/0OOqpp.jpg",
+            "image": "afk-sherpa-towel.jfif"
+        }
+    },
+    {
+        "pk":5, 
+        "model": "products.seasonal",
+        "fields":{
+            "sku":"pp10000023425",
+            "gender":"Unisex",
+            "date":"December",
+            "name": "AFK Snowflake Ornament",
+            "description":"The Official AFK snowflake ornament. Perfect for hanging on the christmas tree. Comes with two in the box",
+            "rating": 3.5,
+            "price": 9.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img922/3995/B0qKhF.jpg",
+            "image": "afk-snowflake-ornament.jfif"
+        }
+    }
+
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "pk":1, 
+        "model": "products.specials",
+        "fields":{
+            "sku":"pp1000004992",
+            "gender":"Unisex",
+            "name": "AFK Socks",
+            "description":"The Premium Afk Socks very comfrotable for those long Gaming sessions. Comes with 3 pairs",
+            "rating": 4,
+            "rrp":19.99,
+            "price": 9.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img923/9505/6o39fz.jpg",
+            "image": "afk-stickers.jfif"
+        }
+    },
+    {
+        "pk":2, 
+        "model": "products.specials",
+        "fields":{
+            "sku":"pp1000023452",
+            "gender":"Unisex",
+            "name": "AFK Tank Top",
+            "description":"Limited Edition Afk Tank. Comes with two Tops, muscle fit.",
+            "rating": 3.9,
+            "rrp":24.99,
+            "price": 19.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img922/3200/LMlK2r.jpg",
+            "image": "afk-tank-top.jfif"
+        }
+    },
+    {
+        "pk":3, 
+        "model": "products.specials",
+        "fields":{
+            "sku":"pp1000033763",
+            "gender":"Unisex",
+            "name": "AFK Duffel",
+            "description":"The Official AFK Duffel Bag, with additional pockets, perfect for Gym equipment, or holding all your electronics!",
+            "rating": 3,
+            "rrp":39.99,
+            "price": 24.99,
+            "category": 6,
+            "image_url": "https://imagizer.imageshack.com/img924/1084/0IKQPo.jpg",
+            "image": "afk-duffel.jfif"
+        }
+    }
+]

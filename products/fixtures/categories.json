@@ -4,7 +4,7 @@
         "model": "products.category",
         "fields":{
             "name": "accesories",
-            "friendly_name": "Accesories"
+            "friendly_name": "Accessories"
         }
     },
     {

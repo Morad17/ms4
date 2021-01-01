@@ -1,11 +1,13 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="justify-content-center navbar-nav w-100 mx-auto ">
-        <li class="nav-item d-block d-md-none">
+        <li class="nav-item ">
             <a class="nav-link" href="{% url 'home' %}" id="home-link">Home</a>
         </li>
         <li class="nav-item">
+            <!----All Products Link---->
             <a class="nav-link" href="{% url 'products' %}" id="all-products-links"  aria-haspopup="true" aria-expanded="false">All Merch</a>
         </li>
+        <!---Individual Links---->
         <li class="nav-item">
             <a class="nav-link" href="{% url 'products' %}?category=t_shirts" id="t-shirts-links"  aria-haspopup="true" aria-expanded="false"> T-Shirts</a>
         </li>
@@ -15,11 +17,9 @@
         <li class="nav-item">
             <a class="nav-link" href="{% url 'products' %}?category=accesories,electronic_accesories,jewellery,bags" id="accesories-links"  aria-haspopup="true" aria-expanded="false"> Accesories</a>
         </li>
+        <!-----Top Tranding Products---->
         <li class="nav-item">
-            <a class="nav-link" href="" id="hot-links"  aria-haspopup="true" aria-expanded="false">Hot</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" id="contact-links" aria-haspopup="true" aria-expanded="false"> Contact Us</a>
+            <a class="nav-link" href="{% url 'hot_products' %}" id="hot-links"  aria-haspopup="true" aria-expanded="false">Hot</a>
         </li>
     </ul>
 </div>
