@@ -1,1 +1,1 @@
-web: gunicorn ms4.wsgi:application
+web: gunicorn afk-gamer.wsgi:application
