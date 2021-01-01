@@ -114,7 +114,7 @@ ACCOUNT_USERNAME_MIN_LENGTH = 6
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-WSGI_APPLICATION = 'afk-gamer.wsgi.application'
+WSGI_APPLICATION = 'ms4.wsgi.application'
 
 
 # Database
