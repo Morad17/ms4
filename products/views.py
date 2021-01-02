@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, Seasonal, Specials
+from .models import Product, Category
 from .forms import ProductForm
 
 def all_products(request):
@@ -108,42 +108,6 @@ def delete_product(request, product_id):
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
 
-def seasonal_products(request):
-    """Populate Seasonal products"""
-
-    seasonal = Seasonal.objects.all()
-    context = {
-            'seasonal': seasonal,
-        }
-
-    return render(request, 'seasonal/hot_products.html', context)
-
-def specials_products(request):
-    """Populate Special Offer products """
-
-    specials = Specials.objects.all()
-    context = {
-            'specials': specials,
-        }
-
-    return render(request, 'specials/hot_products.html', context)
-
-def hot_products(request):
-    """Populate Hot products Page"""
-
-    products = Product.objects.filter(rating__gt=4)
-    specials = Specials.objects.all()
-    seasonal = Seasonal.objects.all()
-    context = {
-            'products': products,
-            'seasonal': seasonal,
-            'specials': specials,
-        }
-
-    return render(request, 'products/hot_products.html', context)
-
-
-
 def product_detail(request, product_id):
     """The view to show individual product details"""
     product = get_object_or_404(Product, pk=product_id)
@@ -151,23 +115,4 @@ def product_detail(request, product_id):
         'product': product,
     }
 
-    return render(request, 'products/product_detail.html', context)
-
-def specials_detail(request, product_id):
-    """The view to show individual specials product details"""
-    specials = get_object_or_404(Specials, pk=product_id)
-    product = specials
-    context = {
-        'product': product,
-    }
-
-    return render(request, 'products/product_detail.html', context)
-
-def seasonal_detail(request, product_id):
-    """The view to show individual seasional product details"""
-    seasonal = get_object_or_404(Seasonal, pk=product_id)
-    product = seasonal
-    context = {
-        'product': product,
-    }
     return render(request, 'products/product_detail.html', context)
