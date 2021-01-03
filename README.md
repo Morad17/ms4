@@ -60,6 +60,10 @@ are Limited Time Only offer to attract customers. Special Items are Special Offe
 sale, to entice customers to buy, and Hightest rated products are displayed to Show customers the most poppular items. A rating system
 was one thing that was thought off, but didnt have time to finish.
 
+4. Models were created for Seasonal Products, so to promote Porducts in the seasonal promotion times, e.g. black friday and christmas in the Winter. There
+are also certain discount depending on the seasons. If a product has a True on
+discounted it appear in the 'Hot' Page.
+
 
 # Libraries and Frameworks used
 
