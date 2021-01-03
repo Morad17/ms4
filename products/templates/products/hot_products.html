@@ -83,6 +83,11 @@
                         <h2 class="text-center specials-heading">Special Sales offers</h2>
                         <hr>
                     </div>
+                    {% for s in season_fields %}
+                    <div class="col-12">
+                        <p>This {{ s.season }} Save A Massive {{ s.discount }}%. Hurry Offers End in {{ s.month_finish }}</p>
+                    </div>
+                    {% endfor %}
                     {% for product in discounted %}
                         {% if product.rrp != product.price %}
                             <div class="col-sm-6 col-md-6 col-lg-4">
