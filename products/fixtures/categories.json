@@ -3,7 +3,7 @@
         "pk":1, 
         "model": "products.category",
         "fields":{
-            "name": "accesories",
+            "name": "accessories",
             "friendly_name": "Accessories"
         }
     },
@@ -51,8 +51,8 @@
         "pk":7, 
         "model": "products.category",
         "fields":{
-            "name": "electronic_accesories",
-            "friendly_name": "Electronic Accesories"
+            "name": "electronic_accessories",
+            "friendly_name": "Electronic Accessories"
         }
     }
 

@@ -4,10 +4,12 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000001",
+            "season_sales":"False",
             "gender":"Unisex",
             "name": "AFK Logo White Mug",
             "description":"An Official AFK Logo Mug in A White Ceramic Finish. Comes With 3 mugs in the pack",
             "rating": 4,
+            "rrp": 12.99,
             "price": 12.99,
             "category": 1,
             "image_url": "https://imagizer.imageshack.com/img924/783/X7UtzX.jpg",
@@ -19,10 +21,12 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000002",
+            "season_sales":"False",
             "gender":"Unisex",
             "name": "AFK Logo Sweatshirt",
             "description":"The Official AFK Sweatchirt in All white. 100% cotton and completely machine washable. Available in several sizes",
             "rating": 4.5,
+            "rrp": 19.99,
             "price": 19.99,
             "category": 4,
             "image_url": "https://imagizer.imageshack.com/img922/9922/bxUjIX.jpg",
@@ -34,10 +38,12 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000003",
+            "season_sales":"False",
             "gender":"Unisex",
             "name": "AFK Logo Jumper",
             "description":"The Official AFK Jumper in All white. Watch your favourite stream wearing the most popular Jumper on sale! 100% cotton and completely machine washable. Available in several sizes",
             "rating": 5,
+            "rrp": 24.99,
             "price": 24.99,
             "category": 4,
             "image_url": "https://imagizer.imageshack.com/img924/3853/gp0nEd.jpg",
@@ -49,10 +55,12 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000004",
+            "season_sales":"False",
             "gender":"Unisex",
             "name": "AFK Logo Longsleeve Tee",
             "description":"The Official AFK Longsleeve T Shirt in white with a black trim. 100% cotton and completely machine washable. Available in several sizes",
             "rating": 4.2,
+            "rrp": 14.99,
             "price": 14.99,
             "category": 2,
             "image_url": "https://imagizer.imageshack.com/img922/149/j0eXP2.jpg",
@@ -64,10 +72,12 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000005",
+            "season_sales":"False",
             "gender":"Unisex",
             "name": "AFK Facemask",
             "description":"The Official AFK Facemask to get you through the corona period. Fully Protects the user from giving out diseases. Machine Washable and reusable. Comes with 4 in a pack",
             "rating": 3.5,
+            "rrp": 9.99,
             "price": 9.99,
             "category": 1,
             "image_url": "https://imagizer.imageshack.com/img924/5857/La0nz6.jpg",
@@ -79,10 +89,12 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000006",
+            "season_sales":"False",
             "gender":"Unisex",
             "name": "AFK Offical Phone Cover",
             "description":"The Official AFK Phone Cover to protect your Iphone. This cover clips on the back of your phone and fully protects it from drops up to heights of 20 ft. A screen Protector is not included",
             "rating": 4.2,
+            "rrp": 12.99,
             "price": 12.99,
             "category": 7,
             "image_url": "https://imagizer.imageshack.com/img922/153/I8Wgqr.jpg",
@@ -94,10 +106,12 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000007",
+            "season_sales":"False",
             "gender":"Unisex",
             "name": "AFK Dog Tag",
             "description":"The Official AFK Dog Tags. This unique set of Jewellery is a great addition to any outfits you choose. Made from stainless steel, will never rust.",
             "rating": 4,
+            "rrp": 19.99,
             "price": 19.99,
             "category": 5,
             "image_url": "https://imagizer.imageshack.com/img922/6306/ejLWPx.jpg",
@@ -109,10 +123,12 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000008",
+            "season_sales":"False",
             "gender":"Unisex",
             "name": "AFK Water",
             "description":"The Official AFK Water Bottle. This Flask will help to keep your drinks cool in any templeratures. You can leave in the fridge or take it out with you to work. It also has a clip to attatch to a bag for convenience.",
             "rating": 4.5,
+            "rrp": 24.99,
             "price": 24.99,
             "category": 1,
             "image_url": "https://imagizer.imageshack.com/img924/6890/sclgCO.jpg",
@@ -124,10 +140,12 @@
         "model": "products.product",
         "fields":{
             "sku":"pp1000000009",
+            "season_sales":"False",
             "gender":"Unisex",
             "name": "AFK Rucksack",
             "description":"The Official AFK Rucksack, with two pockets, and an internal pocket for storage of valuables. Comes in a cofortable fabric thats easy on the back and a portable size.",
             "rating": 4.7,
+            "rrp": 24.99,
             "price": 24.99,
             "category": 6,
             "image_url": "https://imagizer.imageshack.com/img924/4081/tooidn.jpg",
@@ -139,18 +157,154 @@
         "model": "products.product",
         "fields":{
             "sku":"pp10000000010",
+            "season_sales":"False",
             "gender":"Female",
             "name": "AFK Weekender Bag",
             "description":"The Official AFK Weekend Bag. Designed for women who need that bit extra space in their bags. Built to last with great support on handles, and genuine leather.",
             "rating": 4,
+            "rrp": 34.99,
             "price": 34.99,
             "category": 6,
             "image_url": "https://imagizer.imageshack.com/img923/3150/0QuI9A.jpg",
             "image": "afk-weekender-bag.jpg"
         }
+    },
+    {
+        "pk":11, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000992",
+            "season_sales":"True",
+            "gender":"Unisex",
+            "name": "AFK Stickers",
+            "description":"Official Stickers for the Winter season",
+            "rating": 3,
+            "rrp": 10.99,
+            "price": 10.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img922/1393/sh43Er.jpg",
+            "image": "afk-stickers.jfif"
+        }
+    },
+    {
+        "pk":12, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000052",
+            "season_sales":"True",
+            "gender":"Unisex",
+            "name": "AFK Calendar",
+            "description":"Offical 2021 Calendar for the new year",
+            "rating": 3.5,
+            "rrp": 19.99,
+            "price": 19.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img922/9740/WzXLcs.jpg",
+            "image": "afk-calendar.jfif"
+        }
+    },
+    {
+        "pk":13, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000000763",
+            "gender":"Unisex",
+            "season_sales":"True",
+            "name": "AFK Stockings",
+            "description":"The Official AFK Stocking for the Christmas holidays",
+            "rating": 3,
+            "rrp": 13.99,
+            "price": 13.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img923/8678/kaMA7X.jpg",
+            "image": "afk-stockings.jfif"
+        }
+    },
+    {
+        "pk":14, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000003434",
+            "gender":"Unisex",
+            "season_sales":"True",
+            "name": "AFK Sherpa Towel",
+            "description":"The Official AFK Sherpa Towel only available during the winter",
+            "rating": 4.2,
+            "rrp": 14.99,
+            "price": 14.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img923/8750/0OOqpp.jpg",
+            "image": "afk-sherpa-towel.jfif"
+        }
+    },
+    {
+        "pk":15, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp10000023425",
+            "gender":"Unisex",
+            "season_sales":"True",
+            "name": "AFK Snowflake Ornament",
+            "description":"The Official AFK snowflake ornament. Perfect for hanging on the christmas tree. Comes with two in the box",
+            "rating": 3.5,
+            "rrp": 9.99,
+            "price": 9.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img922/3995/B0qKhF.jpg",
+            "image": "afk-snowflake-ornament.jfif"
+        }
+    },
+    {
+        "pk":16, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000004992",
+            "gender":"Unisex",
+            "season_sales":"False",
+            "name": "AFK Socks",
+            "description":"The Premium Afk Socks very comfrotable for those long Gaming sessions. Comes with 3 pairs",
+            "rating": 4,
+            "rrp":19.99,
+            "price": 9.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img923/9505/6o39fz.jpg",
+            "image": "afk-stickers.jfif"
+        }
+    },
+    {
+        "pk":17, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000023452",
+            "gender":"Unisex",
+            "season_sales":"False",
+            "name": "AFK Tank Top",
+            "description":"Limited Edition Afk Tank. Comes with two Tops, muscle fit.",
+            "rating": 3.9,
+            "rrp":24.99,
+            "price": 19.99,
+            "category": 1,
+            "image_url": "https://imagizer.imageshack.com/img922/3200/LMlK2r.jpg",
+            "image": "afk-tank-top.jfif"
+        }
+    },
+    {
+        "pk":18, 
+        "model": "products.product",
+        "fields":{
+            "sku":"pp1000033763",
+            "gender":"Unisex",
+            "season_sales":"False",
+            "name": "AFK Duffel",
+            "description":"The Official AFK Duffel Bag, with additional pockets, perfect for Gym equipment, or holding all your electronics!",
+            "rating": 3,
+            "rrp":39.99,
+            "price": 24.99,
+            "category": 6,
+            "image_url": "https://imagizer.imageshack.com/img924/1084/0IKQPo.jpg",
+            "image": "afk-duffel.jfif"
+        }
     }
 
-
-    
 
 ]

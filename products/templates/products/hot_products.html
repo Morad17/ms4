@@ -30,11 +30,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4">
                             <div class="card h-100">
                                 {% if product.image %}
-                                <a href="{% url 'seasonal_detail' product.id %}">
+                                <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 {% else %}
-                                <a href="{% url 'seasonal_detail' product.id %}">
+                                <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
@@ -83,57 +83,57 @@
                         <h2 class="text-center specials-heading">Special Sales offers</h2>
                         <hr>
                     </div>
-                    
-                    {% for product in specials %}
-                        <div class="col-sm-6 col-md-6 col-lg-4">
-                            <div class="card h-100">
-                                {% if product.image %}
-                                <a href="{% url 'specials_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'specials_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                </a>
-                                {% endif %}
-                                <div class="card-body">
-                                    <p>{{ product.name }}</p>
-                                </div>
-                                <div class="card-footer bg-white">
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="product-price">£{{ product.price }}</p>
-                                            {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star"></i>{{ product.rating }} / 5</small>
-                                            {% else %}
-                                                <small class="text-muted">No Ratings</small>
-                                            {% endif %}
-                                             {% if request.user.is_superuser %}
-                                                <div class="col-12">
-                                                    <a href="{% url 'edit_product' product.id %}">Edit</a>|
-                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                                </div>
-                                            {% endif %}
-                                        </div>
-                                        <div class="col">
-                                            <p class="product-rrp">Was £{{ product.rrp }}</p>
+                    {% for product in discounted %}
+                        {% if product.rrp != product.price %}
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="card h-100">
+                                    {% if product.image %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    </a>
+                                    {% else %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    </a>
+                                    {% endif %}
+                                    <div class="card-body">
+                                        <p>{{ product.name }}</p>
+                                    </div>
+                                    <div class="card-footer bg-white">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="product-price">£{{ product.price }}</p>
+                                                {% if product.rating %}
+                                                    <small class="text-muted"><i class="fas fa-star"></i>{{ product.rating }} / 5</small>
+                                                {% else %}
+                                                    <small class="text-muted">No Ratings</small>
+                                                {% endif %}
+                                                {% if request.user.is_superuser %}
+                                                    <div class="col-12">
+                                                        <a href="{% url 'edit_product' product.id %}">Edit</a>|
+                                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                    </div>
+                                                {% endif %}
+                                            </div>
+                                            <div class="col">
+                                                <p class="product-rrp">Was £{{ product.rrp }}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none d-xl-none mb-4">
-                                <hr class="product-hr">
-                            </div>
-                        {% endif %}
+                            {% if forloop.counter|divisibleby:2 %}
+                                <div class="col-12 d-none d-sm-block d-md-block d-lg-none d-xl-none mb-4">
+                                    <hr class="product-hr">
+                                </div>
+                            {% endif %}
 
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-block ">
-                                <hr class="product-hr">
-                            </div>
-                        {% endif %}
-
+                            {% if forloop.counter|divisibleby:3 %}
+                                <div class="col-12 d-none d-lg-block d-xl-block ">
+                                    <hr class="product-hr">
+                                </div>
+                            {% endif %}
+                        {% endif %}                    
                     {% endfor %}
                 </div>
                 <!----Top Rated Products---->
@@ -143,7 +143,7 @@
                         <h2 class="text-center rating-heading">Our Highest Rated Products</h2>
                         <hr>
                     </div>
-                    {% for product in products %}
+                    {% for product in high_rating %}
                         <div class="col-sm-6 col-md-6 col-lg-4">
                             <div class="card h-100">
                                 {% if product.image %}

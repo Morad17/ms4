@@ -1,0 +1,43 @@
+[
+    {
+        "pk":1, 
+        "model": "products.season",
+        "fields":{
+            "season":"winter",
+            "month_start":"December",
+            "month_finish":"February",
+            "discount":20
+            }
+    },
+    {
+        "pk":2, 
+        "model": "products.season",
+        "fields":{
+            "season":"spring",
+            "month_start":"March",
+            "month_finish":"May",
+            "discount":15
+            }
+    },
+    {
+        "pk":3, 
+        "model": "products.season",
+        "fields":{
+            "season":"summer",
+            "month_start":"June",
+            "month_finish":"August",
+            "discount":15
+            }
+    },
+    {
+        "pk":4, 
+        "model": "products.season",
+        "fields":{
+            "season":"autumn",
+            "month_start":"September",
+            "month_finish":"November",
+            "discount":15
+            }
+    }
+    
+]
